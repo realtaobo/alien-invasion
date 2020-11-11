@@ -1,10 +1,15 @@
+'''
+Author: taobo
+Date: 2020-11-11 19:33:13
+LastEditTime: 2020-11-11 20:09:20
+'''
 import pygame
 from pygame.sprite import Sprite
 
 
 class Bullet(Sprite):
     """对飞船发射子弹管理的类"""
-
+    """ds"""
     def __init__(self, ai_setting, screen, ship):
         super().__init__()
         self.screen = screen
