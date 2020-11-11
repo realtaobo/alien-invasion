@@ -1,3 +1,8 @@
+'''
+Author: taobo
+Date: 2020-11-11 19:33:13
+LastEditTime: 2020-11-11 21:19:17
+'''
 import pygame
 from pygame.sprite import Group
 import game_functions as gf
@@ -23,3 +28,4 @@ def run_game():
 
 
 run_game()
+
