@@ -10,6 +10,5 @@ jobs:
       env: PATH=/c/Python38:/c/Python38/Scripts:$PATH
 install: 
   - pip3 install --upgrade pip 
-  - pip3 install pygame
-  - pip3 install . 
-script: python3 main.py || python3 main.py
+  - pip3 install pygame 
+script: python main.py || python3 main.py
