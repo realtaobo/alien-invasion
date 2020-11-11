@@ -1,7 +1,7 @@
 '''
 Author: taobo
 Date: 2020-11-11 19:33:13
-LastEditTime: 2020-11-11 21:19:17
+LastEditTime: 2020-11-11 22:40:04
 '''
 import pygame
 from pygame.sprite import Group
@@ -25,7 +25,7 @@ def run_game():
         ship.update()
         gf.update_bullets(bullets)
         gf.update_screen(ai_setting, screen, ship, bullets)
-
+        break
 
 run_game()
 
