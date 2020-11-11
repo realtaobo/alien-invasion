@@ -1,8 +1,7 @@
 language: python
 python:
   - "3.8"
-install:
-  - pip install pygame
+install: true
 script: python main.py
 branches: master
 
