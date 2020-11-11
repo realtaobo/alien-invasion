@@ -1,0 +1,12 @@
+os: windows10
+sudo: false
+language: python
+python:
+  - "3.8"
+install:
+  - pip install pygame
+script: python main.py
+branches: master
+
+notifications:
+  email: false
