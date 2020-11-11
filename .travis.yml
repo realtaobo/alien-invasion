@@ -15,6 +15,6 @@ install:
   - pip3 install pygame 
 script: python main.py || python3 main.py
 
-branches: master
+branches: main
 notifications:
   email: false
