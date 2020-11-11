@@ -1,10 +1,21 @@
 <!--
  * @Author: taobo
  * @Date: 2020-11-11 14:18:45
- * @LastEditTime: 2020-11-11 21:37:46
+ * @LastEditTime: 2020-11-11 23:16:36
 -->
 # alien-invasion
 [![Build Status](https://travis-ci.com/tryturned/alien-invasion.svg?branch=main)](https://travis-ci.com/tryturned/alien-invasion)
+
+## 目录
+[1. 外星人入侵：使用 Python 开发游戏](https://github.com/tryturned/alien-invasion#1-%E5%A4%96%E6%98%9F%E4%BA%BA%E5%85%A5%E4%BE%B5%E4%BD%BF%E7%94%A8-python-%E5%BC%80%E5%8F%91%E6%B8%B8%E6%88%8F)  
+
+[2. 项目规划](https://github.com/tryturned/alien-invasion#2-%E9%A1%B9%E7%9B%AE%E8%A7%84%E5%88%92)  
+
+[3. pygame 模块常用函数](https://github.com/tryturned/alien-invasion#3-pygame-%E6%A8%A1%E5%9D%97%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0)  
+
+[4. 设计流程](https://github.com/tryturned/alien-invasion#4-%E8%AE%BE%E8%AE%A1%E6%B5%81%E7%A8%8B)  
+
+
 ## 1. 外星人入侵：使用 Python 开发游戏
 将使用 `Pygame` 包来开发一款 2D 游戏，它在玩家每消灭一群向下移动的外星人后，都将玩家提高一个等级；而等级越高，游戏的节奏越快，难度越大。完成这个项目后，你将获得自己动手使用 `Pygame` 开发 2D 游戏所需的技能。
 ## 2. 项目规划
