@@ -1,7 +1,7 @@
 '''
 Author: taobo
 Date: 2020-11-11 19:33:13
-LastEditTime: 2020-11-11 22:40:04
+LastEditTime: 2020-11-11 22:47:56
 '''
 import pygame
 from pygame.sprite import Group
@@ -25,6 +25,7 @@ def run_game():
         ship.update()
         gf.update_bullets(bullets)
         gf.update_screen(ai_setting, screen, ship, bullets)
+        # 该break是为了 travis CI 可以正常结束，调试使用时须删除
         break
 
 run_game()

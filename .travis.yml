@@ -1,3 +1,5 @@
+# https://docs.travis-ci.com/user/languages/python/#running-python-tests-on-multiple-operating-systems
+# windows 下 .travis.yml 参考上链接
 language: python            # this works for Linux but is an error on macOS or Windows
 jobs:
   include:
@@ -12,3 +14,7 @@ install:
   - pip3 install --upgrade pip 
   - pip3 install pygame 
 script: python main.py || python3 main.py
+
+branches: master
+notifications:
+  email: false

@@ -40,16 +40,6 @@ self.screen.blit(self.image, self.rect) | 放置图像至指定的位置
 > link: [bullet.py](./bullet.py)
 
 ### 4.3 设计实现外星人模块
-```shell
-# language: python
-# python:
-#   - "3.8"
-# # command to install dependencies
-# install:
-#   - pip install pygame
-# # command to run tests
-# script: true
-```
 
 
 
