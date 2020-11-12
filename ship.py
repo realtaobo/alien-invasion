@@ -1,3 +1,8 @@
+'''
+Author: taobo
+Date: 2020-11-11 19:33:13
+LastEditTime: 2020-11-12 09:07:01
+'''
 import pygame
 
 
@@ -29,3 +34,6 @@ class Ship(object):
             self.center -= self.ai_setting.ship_speed_factor
 
         self.rect.centerx = self.center
+
+    def center_ship(self):
+        self.center = self.screen_rect.centerx

@@ -1,7 +1,7 @@
 <!--
  * @Author: taobo
  * @Date: 2020-11-11 14:18:45
- * @LastEditTime: 2020-11-11 23:16:36
+ * @LastEditTime: 2020-11-12 09:10:34
 -->
 # alien-invasion
 [![Build Status](https://travis-ci.com/tryturned/alien-invasion.svg?branch=main)](https://travis-ci.com/tryturned/alien-invasion)
@@ -51,6 +51,12 @@ self.screen.blit(self.image, self.rect) | 放置图像至指定的位置
 > link: [bullet.py](./bullet.py)
 
 ### 4.3 设计实现外星人模块
+在该环节，我们将在游戏《外星人入侵》中添加外星人。   
+
+- 首先，我们在屏幕上边缘附近添加一个外星人，然后生成一群外星人。我们让这群外星人向两边和下面移动，并删除被子弹击中的外星人。
+- 最后，我们将显示玩家拥有的飞船数量，并在玩家的飞船用完后结束游戏。  
+
+> link: [alien.py](./alien.py)
 
 
 
