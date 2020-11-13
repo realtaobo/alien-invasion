@@ -1,9 +1,9 @@
 '''
 Author: taobo
 Date: 2020-11-11 19:33:13
-LastEditTime: 2020-11-13 09:29:25
+LastEditTime: 2020-11-13 12:33:03
 '''
-import sys
+import sys 
 import pygame
 from time import sleep
 from bullet import Bullet
@@ -63,13 +63,14 @@ def check_events(ai_setting, screen, ship, bullets, aliens, stats, play_button):
             check_play_button(stats, play_button, mouse_x, mouse_y, ai_setting, screen, ship, bullets, aliens)
 
 
-def update_screen(ai_setting, screen, ship, aliens, bullets, stats, play_button):
+def update_screen(ai_setting, screen, ship, aliens, bullets, stats, play_button, sb):
     """刷新屏幕"""
     screen.fill(ai_setting.bg_color)
     for bullet in bullets.sprites():
         bullet.draw_bullet()
     ship.blitme()
     aliens.draw(screen)
+    sb.show_score()
 
     if not stats.game_active:
         play_button.draw_button()
@@ -78,20 +79,24 @@ def update_screen(ai_setting, screen, ship, aliens, bullets, stats, play_button)
     pygame.display.flip()
 
 
-def check_bullet_alien_collisions(bullets, ai_setting, screen, aliens, ship):
+def check_bullet_alien_collisions(bullets, ai_setting, screen, aliens, ship, stats, sb):
     collisions = pygame.sprite.groupcollide(bullets, aliens, True, True)
+    if collisions:
+        for als in collisions.values():
+            stats.score += ai_setting.alien_points * len(als)
+            sb.prep_score()
     if len(aliens) == 0:
         bullets.empty()
         ai_setting.increase_speed()
         create_fleet(ai_setting, screen, aliens, ship)
 
 
-def update_bullets(bullets, ai_setting, screen, aliens, ship):
+def update_bullets(bullets, ai_setting, screen, aliens, ship, stats, sb):
     bullets.update()
     for bullet in bullets.copy():
         if bullet.rect.bottom <= 0:
             bullets.remove(bullet)
-    check_bullet_alien_collisions(bullets, ai_setting, screen, aliens, ship)            
+    check_bullet_alien_collisions(bullets, ai_setting, screen, aliens, ship, stats, sb)            
 
 
 def get_number_aliens_x(ai_setting, alien_width):

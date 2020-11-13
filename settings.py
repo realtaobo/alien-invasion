@@ -1,7 +1,7 @@
 '''
 Author: taobo
 Date: 2020-11-11 19:33:13
-LastEditTime: 2020-11-13 09:29:55
+LastEditTime: 2020-11-13 12:36:40
 '''
 class Settings(object):
     """该类存储游戏所有的设置"""
@@ -22,13 +22,16 @@ class Settings(object):
         self.ships_limit = 3
 
         self.speedup_scale = 1.1
+        self.score_scale = 1.5
 
     def initialize_dynamic_settings(self):
         self.bullet_speed_factor = 0.8
         self.alien_speed_factor = 0.7
         self.ship_speed_factor = 1
+        self.alien_points = 50
 
     def increase_speed(self):
         self.bullet_speed_factor *= self.speedup_scale
         self.alien_speed_factor *= self.speedup_scale
         self.ship_speed_factor *= self.speedup_scale
+        self.alien_points = int(self.alien_points * self.score_scale)
