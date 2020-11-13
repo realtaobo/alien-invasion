@@ -1,7 +1,7 @@
 '''
 Author: taobo
 Date: 2020-11-11 19:33:13
-LastEditTime: 2020-11-13 12:36:40
+LastEditTime: 2020-11-13 21:21:31
 '''
 class Settings(object):
     """该类存储游戏所有的设置"""
@@ -23,6 +23,7 @@ class Settings(object):
 
         self.speedup_scale = 1.1
         self.score_scale = 1.5
+        self.initialize_dynamic_settings()
 
     def initialize_dynamic_settings(self):
         self.bullet_speed_factor = 0.8

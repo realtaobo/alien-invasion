@@ -1,14 +1,16 @@
 '''
 Author: taobo
 Date: 2020-11-11 19:33:13
-LastEditTime: 2020-11-13 12:00:25
+LastEditTime: 2020-11-13 20:55:17
 '''
 import pygame
+from pygame.sprite import Sprite
 
 
-class Ship(object):
+class Ship(Sprite):
     def __init__(self, screen, ai_setting):
         """初始化飞船并设置其初始位置"""
+        super().__init__()
         self.screen = screen
         self.moving_right = False
         self.moving_left = False

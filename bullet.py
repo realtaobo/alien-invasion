@@ -1,7 +1,7 @@
 '''
 Author: taobo
 Date: 2020-11-11 19:33:13
-LastEditTime: 2020-11-13 12:43:31
+LastEditTime: 2020-11-13 21:32:23
 '''
 import pygame
 from pygame.sprite import Sprite
@@ -17,7 +17,6 @@ class Bullet(Sprite):
         self.rect = pygame.Rect(0, 0, ai_setting.bullet_width, ai_setting.bullet_height)
         self.rect.centerx = ship.rect.centerx
         self.rect.top = ship.rect.top
-
         self.y = float(self.rect.y)
 
         self.color = ai_setting.bullet_color

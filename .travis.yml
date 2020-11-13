@@ -13,7 +13,7 @@ jobs:
 install: 
   - pip3 install --upgrade pip 
   - pip3 install pygame 
-script: python main.py || python3 main.py
+script: python main.py False || python3 main.py False
 
 branches: main
 notifications:

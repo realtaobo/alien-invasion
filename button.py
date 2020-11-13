@@ -1,9 +1,11 @@
 '''
 Author: taobo
 Date: 2020-11-13 08:38:04
-LastEditTime: 2020-11-13 11:59:40
+LastEditTime: 2020-11-13 21:31:45
 ''' 
 import pygame.font
+
+
 class Button(object):
   def __init__(self, ai_setting, screen, msg):
     self.ai_setting = ai_setting
