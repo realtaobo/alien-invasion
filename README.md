@@ -1,7 +1,7 @@
 <!--
  * @Author: taobo
  * @Date: 2020-11-11 14:18:45
- * @LastEditTime: 2020-11-12 09:10:34
+ * @LastEditTime: 2020-11-13 08:29:42
 -->
 # alien-invasion
 [![Build Status](https://travis-ci.com/tryturned/alien-invasion.svg?branch=main)](https://travis-ci.com/tryturned/alien-invasion)
@@ -57,6 +57,11 @@ self.screen.blit(self.image, self.rect) | 放置图像至指定的位置
 - 最后，我们将显示玩家拥有的飞船数量，并在玩家的飞船用完后结束游戏。  
 
 > link: [alien.py](./alien.py)
+
+### 4.4 记分系统
+在本章中，我们将结束游戏《外星人入侵》的开发。我们将添加一个Play按钮，用于根据需要启动游戏以及在游戏结束后重启游戏。我们还将修改这个游戏，使其在玩家的等级提高时加快节奏，并实现一个记分系统。阅读本章后，你将掌握足够多的知识，能够开始编写随玩家等级提高而加大难度以及显示得分的游戏。
+  
+
 
 
 

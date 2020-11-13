@@ -6,7 +6,7 @@ LastEditTime: 2020-11-12 21:23:10
 class GameStats(object):
   def __init__(self, ai_setting):
     self.ai_setting = ai_setting
-    self.game_active = True
+    self.game_active = False
     self.reset_stats()
 
   def reset_stats(self):
